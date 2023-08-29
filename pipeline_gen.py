@@ -1,4 +1,5 @@
-from c import *
+#c3
+from load_models import *
 
 # Use a pipeline for later
 from transformers import pipeline
