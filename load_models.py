@@ -12,6 +12,7 @@ bnb_config = transformers.BitsAndBytesConfig(
     bnb_4bit_compute_dtype=torch.bfloat16
 )
 
+
 tokenizer2 = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf",
                                           use_auth_token=True,)
 
