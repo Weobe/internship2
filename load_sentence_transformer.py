@@ -1,3 +1,4 @@
+#c6
 from langchain.embeddings import HuggingFaceEmbeddings
 
 #replace model name to use another model
