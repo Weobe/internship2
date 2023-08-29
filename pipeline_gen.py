@@ -1,4 +1,4 @@
-from c2 import *
+from c import *
 
 # Use a pipeline for later
 from transformers import pipeline
