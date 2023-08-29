@@ -1,3 +1,6 @@
+#sample usage to save a model to local machine
+
+"""
 import torch
 import transformers
 from transformers import AutoTokenizer, AutoModelForCausalLM
@@ -43,3 +46,4 @@ model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-13b-chat-hf",
 tokenizer.save_pretrained("./llama2_tokenizer13")
 model.save_pretrained("./llama2_model13")
 
+"""
