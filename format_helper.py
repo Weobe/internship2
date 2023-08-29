@@ -1,4 +1,4 @@
-from c3 import *
+from pipeline_gen import *
 
 import json
 import textwrap
@@ -45,6 +45,7 @@ def generate(text):
 
     return final_outputs#, outputs
 
+#format text for better view in terminal
 def parse_text(text):
         wrapped_text = textwrap.fill(text, width=100)
         print(text +'\n\n')
