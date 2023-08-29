@@ -14,12 +14,16 @@ def read_pdf():
     if not pdf_name.endswith(".pdf"):
         pdf_name = pdf_name + ".pdf"
 
-    loader = PyPDFLoader(
+    try:
+        loader = PyPDFLoader(
         pdf_name,# mode="elements", strategy="fast",
         )
 
-    docs = loader.load()
+        docs = loader.load()
 
+    except:
+        return
+        
     #split text and store embedding in vectorstore
     text_splitter = RecursiveCharacterTextSplitter(chunk_size = 500, chunk_overlap = 0)
     all_splits = text_splitter.split_documents(docs)
