@@ -63,6 +63,16 @@
 
   Once you enter the name, you can again ask as many questions as you like. When you are done, type `exit` to start a new chat.
 
+
+### Additional tips:
+
+  In case of "Permission denied errors under `/mnt` make a new directory and change its ownership to azrsrvadm. Perform all steps under this directory.
+  
+    ```
+    sudo chown -R azrsrvadm:azrsrvadm /mnt/<new_directory>
+    cd <new_directory>
+    ```
+
   
   
 
