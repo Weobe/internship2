@@ -42,6 +42,7 @@
   pip install langchain
   pip install scipy
   pip install sentence_transformers
+  pip install faiss-gpu
   ```
 
 ### First run
