@@ -17,7 +17,7 @@ pipe = pipeline("text-generation",
                 )
 
 
-
+# isn't used, can be commented
 pipe2 = pipeline("text-generation",
                 model = model2,
                 tokenizer=tokenizer2,
