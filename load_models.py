@@ -13,7 +13,8 @@ bnb_config = transformers.BitsAndBytesConfig(
     bnb_4bit_compute_dtype=torch.bfloat16
 )
 
-
+# all variables ending with '2' (model2, tokenizer2, pipe2, llm2 ...) belong to the 7b-chat model, which isn't used actively in the code.
+# they are added for testing purposes, and they can be commented out
 tokenizer2 = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf",
                                           use_auth_token=True,)
 
