@@ -1,4 +1,4 @@
-export TMPDIR='mnt/tmp'
+export TMPDIR='/mnt/env/tmp'
 export HUGGINGFACE_HUB_CACHE=$TMPDIR
 export TRANSFORMERS_CACHE=$TMPDIR
 export XDG_CACHE_HOME=$TMPDIR
