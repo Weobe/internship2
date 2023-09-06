@@ -43,6 +43,7 @@
   pip install scipy
   pip install sentence_transformers
   pip install faiss-gpu
+  pip install pypdf
   ```
 
 ### First run
